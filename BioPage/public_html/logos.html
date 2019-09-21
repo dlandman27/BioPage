@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dylan Landman Bio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="animate.css">        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <div class="topBar"></div>
+        <div class="circle avatar bounceIn"></div>
+        <div class="informationPannel">
+            <h1>Dylan Landman</h1>
+            <p>Half Hollow Hills HSE</p>
+            <h3 class="underline">
+                <br>Contact Details
+            </h3>
+            <ul class="noBullets">
+                <li>&#9993; dylan@landmans.us</li>
+                <li>&#x260F; (516)-514-2959</li>
+            </ul>
+            <h3 class="underline">
+                <br><br><br>Social Presence
+            </h3>
+            <a href="https://www.facebook.com/profile.php?id=100010323152514" target = "blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/dylan_landman/?hl=en" target = "blank" class="fa fa-instagram"></a>
+            <a href="https://www.snapchat.com/add/dylan_landman" target = "blank" class="fa fa-snapchat-ghost"></a>
+        </div>
+        <div class="categoryHolder">
+            <ul class="tabsLine">
+                <li class="inLine"><a class="tab" href="index.html"><h4 class="tab">About Me</h4></a></li>
+                <li class="inLine"><a class="tab" href="geotags.html"><h4 class="tab">Geofilters</h4></a></li>
+                <li class="inLine"><a class="tab" href="logos.html"><h4 class="tab active">Logos</h4></a></li>
+                <li class="inLine"><a class="tab" href=""><h4 class="tab">T-shirts</h4></a></li>
+                <li class="inLine"><a class="tab" href=""><h4 class="tab">Websites</h4></a></li>
+            </ul>
+            <h1 class="underline">Logo Gallery</h1>
+            <ul class="noBullets">
+                <li class="inLine"><img onclick="openModal(this)" class="circle"  src="images/logos/asset 1.png" alt="Logo"></li>                
+                <li class="inLine"><img onclick="openModal(this)" class="circle" src="images/logos/Asset 4.png" alt="Logo"></li>
+                <li class="inLine"><img onclick="openModal(this)" class="circle" src="images/logos/asset 8.png" alt="Logo"></li>
+                <li class="inLine"><img onclick="openModal(this)" class="circle" src="images/logos/mets_1.png" alt="Logo"></li>
+                <li class="inLine"><img onclick="openModal(this)" class="circle" src="images/logos/thespian logo.png" alt="Logo"></li>      
+                <li class="inLine"><img onclick="openModal(this)" class="circle" src="images/logos/docs walk 19.png" alt="Logo"></li>           
+
+            </ul>
+        </div>
+        <div class="footer">
+            <h4 style="color: white; position: relative; top: 50px; align-content: center">Created and Designed by<br><br>Dylan Landman</h4>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" style="background-color: white;">
+          <div id="caption"></div>
+        </div>
+        <script>
+                
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var modalImg = document.getElementById("img01");
+            var elems = document.getElementsByClassName("circle");
+            
+            function openModal(image){
+              modal.style.display = "block";
+              modalImg.src = image.src;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,312 @@
+body
+{
+    margin: 0px;
+    height: 900px;
+    min-width: 1000px
+}
+
+.topBar
+{
+    top: 0px;
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to right, #42d6fa, #2ddc5b);
+    float: right;
+    z-index: -1;
+    position: absolute;
+}
+
+.circle {
+  background-color: #bbb;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 75px;
+}
+
+.informationPannel
+{
+    left: 3%;
+    top: 375px;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+
+.circle.avatar {
+  height: 300px;
+  width: 300px;
+  left: 3%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  background: url("images/MY FACE.png");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-position-y: -35px;
+}
+
+h3.underline
+{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: left;
+
+}
+
+h3.contactFont
+{
+    float: left;
+}
+
+ul.noBullets
+{
+    text-align: left;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    padding-bottom: 8px;
+}
+
+.fa {
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  float: left;
+}
+
+.fa:hover {
+    opacity: 0.6;
+    transition: 0.8s ease;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: pink;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p
+{
+    color: gray;
+}
+
+.categoryHolder
+{
+    position: relative;
+    width: 875px;
+    height: 700px;
+    border: solid white;
+    left: 30%;
+    top: -100px;
+}
+
+ul.tabsLine
+{ 
+    list-style-type: none;
+}
+
+li.inLine
+{
+    display: inline-block;
+    padding-right: 30px;
+}
+a
+{
+    text-decoration: none;
+}
+h4.tab
+{
+    color: #66ccff;
+    transition: .4s ease;
+}
+h4.tab:hover
+{
+    color: blue;
+    border-bottom: 3px solid blue; 
+    text-decoration: blue;
+}
+h4.active
+{
+    border-bottom: 3px solid #66ccff; 
+}
+.footer
+{
+    bottom: 500px;
+    width: 100%;
+    background-color: gray;
+    height: 200px;
+    text-align: center;
+    text-decoration: white;
+}
+img.hello
+{
+    padding-left: 45px;
+    width: 225px;
+    height: 90px;
+}
+img.circle
+{
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border: solid black;
+  border-radius: 50%;
+  display: inline;
+  position: relative;
+  transition: .5s ease;
+}
+img.circle:hover
+{
+ opacity: .6;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  max-height: 700px
+}
+.modal-whiteSpace
+{
+  margin: auto;
+  display: block;
+  background-color: white;
+  width: 80%;
+  max-width: 700px;
+}
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.geotagHolder
+{
+    width: 100%;
+    height: auto;
+    display: block; margin-left: auto; margin-right: auto
+}
+img.geotagArray
+{
+      -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+    top: 145px;
+    width: 240px;
+    height: 465px;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    margin-right: 20%;
+    transition: 0.8s ease;    
+}
+img.arrow:hover
+{
+    width: 60px;
+    height: auto;
+    transition: 0.8s ease;    
+    background-color: lightgray;
+    opacity: .8;
+    border-radius: 50%;
+}
+img.arrow
+{
+    width: 60px;
+    height: auto;
+    transition: 0.8s ease;
+}
+.imageChangerBtn
+{
+    transition: 0.8s ease;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    left: 400px;
+    top: 650px;
+    position: absolute;
+    text-decoration: underline;
+}
+.imageChangerBtn:hover
+{
+    cursor: pointer;
+    opacity: .4;
+    transition: .8s ease;
+}
